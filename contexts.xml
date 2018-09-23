@@ -1,0 +1,52 @@
+<gamecontexts>
+	<inputcontexts name="map context">
+		<inputs name="up release" eventtype="SDL_KEYUP" y="0" x="NaN" context="state" animation="none" >
+			<input keypress="SDLK_UP" isexclude="false" />
+		</inputs>
+		<inputs name="down release" eventtype="SDL_KEYUP" y="0" x="NaN" context="state" animation="none" >
+			<input keypress="SDLK_DOWN" isexclude="false" />
+		</inputs>
+		<inputs name="right release" eventtype="SDL_KEYUP" y="NaN" x="0" context="state" animation="none" >
+			<input keypress="SDLK_RIGHT" isexclude="false" />
+		</inputs>
+		<inputs name="left release" eventtype="SDL_KEYUP" y="NaN" x="0" context="state" animation="none" >
+			<input keypress="SDLK_LEFT" isexclude="false" />
+		</inputs>
+		<inputs name="up right" eventtype="SDL_KEYDOWN" y="-0.707" x="0.707" context="state" animation="walk up right" >
+			<input keypress="SDLK_UP" isexclude="false"/>
+			<input keypress="SDLK_RIGHT" isexclude="false"/>
+		</inputs>
+		<inputs name="up left" eventtype="SDL_KEYDOWN" y="-0.707" x="-0.707" context="state" animation="walk up left" >
+			<input keypress="SDLK_UP" isexclude="false"/>
+			<input keypress="SDLK_LEFT" isexclude="false"/>
+		</inputs>
+		<inputs name="down right" eventtype="SDL_KEYDOWN" y="0.707" x="0.707" context="state" animation="walk down right">
+			<input keypress="SDLK_DOWN" isexclude="false"/>
+			<input keypress="SDLK_RIGHT" isexclude="false"/>
+		</inputs>
+		<inputs name="down left" eventtype="SDL_KEYDOWN" y="0.707" x="-0.707" context="state" animation="walk down left" >
+			<input keypress="SDLK_DOWN" isexclude="false"/>
+			<input keypress="SDLK_LEFT" isexclude="false"/>
+		</inputs>
+		<inputs name="up" eventtype="SDL_KEYDOWN" y="-1" x="0" context="state" animation="walk up" >
+			<input keypress="SDLK_UP" isexclude="false"/>
+			<input keypress="SDLK_RIGHT" isexclude="true" />
+			<input keypress="SDLK_LEFT" isexclude="true"/>
+		</inputs>
+		<inputs name="down" eventtype="SDL_KEYDOWN" y="1" x="0" context="state" animation="walk down" >
+			<input keypress="SDLK_DOWN" isexclude="false" />
+			<input keypress="SDLK_RIGHT" isexclude="true" />
+			<input keypress="SDLK_LEFT" isexclude="true" />
+		</inputs>
+		<inputs name="right" eventtype="SDL_KEYDOWN" y="0" x="1" context="state" animation="walk right" >
+			<input keypress="SDLK_RIGHT" isexclude="false" />
+			<input keypress="SDLK_UP" isexclude="true" />
+			<input keypress="SDLK_DOWN" isexclude="true" />
+		</inputs>
+		<inputs name="left" eventtype="SDL_KEYDOWN" y="0" x="-1" context="state" animation="walk left" >
+			<input keypress="SDLK_LEFT" isexclude="false" />
+			<input keypress="SDLK_UP" isexclude="true"/>
+			<input keypress="SDLK_DOWN" isexclude="true"/>
+		</inputs>
+	</inputcontexts>
+</gamecontexts>

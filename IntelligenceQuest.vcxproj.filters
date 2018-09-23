@@ -16,6 +16,12 @@
     <Filter Include="Header Files\ECS">
       <UniqueIdentifier>{1ad832c9-4fad-461d-b2a1-22eaa590e887}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{e5213782-c5ec-412d-a4b6-8333eb164f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Image Assets">
+      <UniqueIdentifier>{333ac26c-67c1-4c3d-83aa-08cca6286732}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -75,6 +81,33 @@
     <ClInclude Include="UILabel.h">
       <Filter>Header Files\ECS</Filter>
     </ClInclude>
+    <ClInclude Include="Inputs.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="RawInputConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerComponent.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBoxComponent.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -107,33 +140,55 @@
     <ClCompile Include="AssetManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Desktop\main_character_32.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="water.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="IQ_tile_set.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="ColTex.png">
+      <Filter>Resource Files\Image Assets</Filter>
     </Image>
     <Image Include="flesh_child_full.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Image Assets</Filter>
+    </Image>
+    <Image Include="textbox.png">
+      <Filter>Resource Files\Image Assets</Filter>
     </Image>
     <Image Include="tile_set_2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="ColTex.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Image Assets</Filter>
     </Image>
     <Image Include="rock.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Image Assets</Filter>
+    </Image>
+    <Image Include="weak father full 128x64.png">
+      <Filter>Resource Files\Image Assets</Filter>
+    </Image>
+    <Image Include="dad_full_128x64.png">
+      <Filter>Resource Files\Image Assets</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <Font Include="GIL_____.TTF">
       <Filter>Resource Files</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="text.vs">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="text.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="testMap.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="contexts.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

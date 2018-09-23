@@ -15,12 +15,13 @@ private:
 	SDL_Texture *texture;
 	SDL_Rect srcRect, destRect;
 
-	bool animated = false;
 	int frames = 0;
-	int speed = 100;
+	int speed = 200;
+	int rotations = 0;
 
 public:
 
+	bool animated = false;
 	int animIndex = 0;
 
 	std::map<const char*, Animation > animations;
@@ -33,27 +34,35 @@ public:
 		setTex(id);
 	}
 
+	SpriteComponent(std::string id, int rots)
+	{
+		rotations = rots;
+		setTex(id);
+	}
+
 	SpriteComponent(std::string id, bool isAnimated)
 	{
+		
 		animated = isAnimated;
 
-		Animation idle = Animation(0, 1, 100);
-		Animation walkDown = Animation(1, 2, 100);
-		Animation walkUp = Animation(2, 2, 100);
-		Animation walkRight = Animation(3, 2, 100);
-		Animation walkLeft = Animation(4, 2, 100);
-		Animation walkDownRight = Animation(5, 2, 100);
-		Animation walkDownLeft = Animation(6, 2, 100);
-		Animation walkUpRight = Animation(7, 2, 100);
-		Animation walkUpLeft = Animation(8, 2, 100);
+		Animation walkDown = Animation(0, 2, speed );
+		Animation walkUp = Animation(1, 2, speed);
+		Animation walkRight = Animation(2, 2, speed);
+		Animation walkLeft = Animation(2, 2, speed, 0, SDL_FLIP_HORIZONTAL);
+		Animation walkDownRight = Animation(3, 2, speed);
+		Animation walkDownLeft = Animation(3, 2, speed, 0, SDL_FLIP_HORIZONTAL);
+		Animation walkUpRight = Animation(4, 2, speed);
+		Animation walkUpLeft = Animation(4, 2, speed, 0, SDL_FLIP_HORIZONTAL);
 
-		animations.emplace("idle", idle);
 		animations.emplace("walk down", walkDown);
 		animations.emplace("walk up", walkUp);
 		animations.emplace("walk right", walkRight);
 		animations.emplace("walk left", walkLeft);
+		animations.emplace("walk down right", walkDownRight);
+		animations.emplace("walk down left", walkDownLeft);
+		animations.emplace("walk up right", walkUpRight);
+		animations.emplace("walk up left", walkUpLeft);
 
-		Play("idle");
 		setTex(id);
 	}
 
@@ -78,7 +87,11 @@ public:
 	{
 		if (animated)
 		{
-			srcRect.x = srcRect.w * static_cast<int>((SDL_GetTicks() / speed) % frames);
+			srcRect.x = srcRect.w * static_cast<int>((SDL_GetTicks() / speed) % frames) + transform->width;
+		}
+		else
+		{
+			srcRect.x = 0;
 		}
 
 		srcRect.y = animIndex * transform->height;
@@ -91,7 +104,7 @@ public:
 
 	void draw() override
 	{
-		TextureManager::Draw(texture, srcRect, destRect, spriteflip);
+		TextureManager::Draw(texture, srcRect, destRect, rotations, spriteflip);
 	}
 
 	void Play(const char* animName)
@@ -99,5 +112,7 @@ public:
 		frames = animations[animName].frames;
 		animIndex = animations[animName].index;
 		speed = animations[animName].speed;
+		rotations = animations[animName].rotations;
+		spriteflip = animations[animName].flip;
 	}
 };

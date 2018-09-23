@@ -8,8 +8,8 @@ public:
 	Map(std::string tID, int ms, int ts);
 	~Map();
 
-	void LoadMap(std::string path, int sizex, int sizey);
-	void AddTile(int srcX, int srcY, int x, int y);
+	void LoadFullMap(std::string path);
+	void AddTile(int srcX, int srcY, int x, int y, int rots, SDL_RendererFlip flp);
 private:
 	std::string texID;
 	const char* mapFilePath;

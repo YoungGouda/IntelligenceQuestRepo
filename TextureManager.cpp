@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+
 SDL_Texture* TextureManager::LoadTexture(const char* texture)
 {
 	SDL_Surface* tempSurface = IMG_Load(texture);
@@ -9,7 +10,7 @@ SDL_Texture* TextureManager::LoadTexture(const char* texture)
 	return tex;
 }
 
-void TextureManager::Draw(SDL_Texture * tex, SDL_Rect src, SDL_Rect dest, SDL_RendererFlip flip)
+void TextureManager::Draw(SDL_Texture * tex, SDL_Rect src, SDL_Rect dest, int rots, SDL_RendererFlip flip)
 {
-	SDL_RenderCopyEx(Game::renderer, tex, &src, &dest, NULL, NULL, flip);
+	SDL_RenderCopyEx(Game::renderer, tex, &src, &dest, rots * 90, NULL, flip);
 }
