@@ -1,0 +1,54 @@
+﻿  stdafx.cpp
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardhandler.h(26): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardhandler.h(26): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(106): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(107): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(113): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(114): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(120): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(121): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(127): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\keyboardcontroller.h(128): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\tilecomponent.h(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\tilecomponent.h(29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\tilecomponent.h(42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\tilecomponent.h(43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(43): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(58): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(64): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(71): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(77): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(83): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\controllercomponent.h(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\textboxcomponent.h(29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\textboxcomponent.h(30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  AssetManager.cpp
+  Collision.cpp
+  Context.cpp
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\context.cpp(66): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\context.cpp(67): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  ECS.cpp
+  Font.cpp
+  Game.cpp
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\game.cpp(220): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\game.cpp(221): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dwads\source\repos\intelligencequest\intelligencequest\ecs.h(93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  c:\users\dwads\source\repos\intelligencequest\intelligencequest\game.cpp(102): note: see reference to function template instantiation 'T &Entity::addComponent<TransformComponent,int,int,int,int,int>(int &&,int &&,int &&,int &&,int &&)' being compiled
+          with
+          [
+              T=TransformComponent
+          ]
+  GameObject.cpp
+  IntelligenceQuest.cpp
+  Map.cpp
+  TextureManager.cpp
+  Vector2D.cpp
+  Generating Code...
+  IntelligenceQuest.vcxproj -> C:\Users\dwads\source\repos\IntelligenceQuest\Debug\IntelligenceQuest.exe
